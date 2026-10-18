@@ -1,27 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
 <h1>Simple Calculator</h1>
-<p>Perform all operations using JavaScript</p>
+<p>Perform all Operations using JavaScript</p>
 <p id="add"></p>
 <p id="sub"></p>
 <p id="mul"></p>
 <p id="div"></p>
 
 <script>
-  // PART 1: two variables
-  // YOUR CODE HERE
-  // Make num1 with the value 10 and num2 with the value 2.
+    var num1 = 10;
+    var num2 = 2;
 
 
-  // PART 2: the calculations
-  // YOUR CODE HERE
-  // Make four variables: add, sub, mul and div.
-  // Each one holds the answer of num1 and num2 with +, -, * or /.
+var add = num1 + num2;
+var sub = num1 - num2;
+var mul = num1 * num2;
+var div = num1 / num2;
 
-
-  // PART 3: show the answers
-  // YOUR CODE HERE
-  // Use document.getElementById() and .innerHTML to show each answer
-  // in the paragraph with the matching id.
-  // Start each line with: The added value is: / The subtracted value is: /
-  // The multiplied value is: / The divided value is:
-
+document.getElementById("add").innerHTML ="The added value is: " + add;
+document.getElementById("sub").innerHTML ="The subtracted value is: " + sub;
+document.getElementById("mul").innerHTML ="The multiplied value is: " + mul;
+document.getElementById("div").innerHTML ="The divided value is: " + div;
 </script>
+</body>
+</html>
